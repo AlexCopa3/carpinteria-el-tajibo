@@ -1,0 +1,67 @@
+@extends('adminlte::page')
+@section('title', 'Editar tipo de mueble')
+@section('content_header')
+    <x-page-heading :refined="true" title="Editar tipo de mueble" eyebrow="CATÁLOGO / TIPOS DE MUEBLES" />
+@stop
+@section('content')
+    <x-alerts />
+    <div class="row">
+        <div class="col-12 col-lg-10 col-xl-8">
+            <div class="card card-success form-panel form-themed form-action-update">
+                <div class="card-header"><h3 class="card-title">Edite los datos del formulario</h3></div>
+                <div class="card-body">
+                    <form method="POST" action="{{ route('admin.tipos_mueble.update', $tipoMueble) }}">
+                        <p class="form-legend"><span aria-hidden="true">*</span> Campos obligatorios</p>
+                        <div class="row form-fields">
+                            @csrf
+                            @method('PUT')
+                            <div class="col-12">
+                                <div class="form-section-heading">
+                                    <span class="form-section-icon" aria-hidden="true"><i class="fas fa-chair"></i></span>
+                                    <div><h2>Datos del tipo de mueble</h2><p>Define el nombre con el que se seleccionará al cotizar.</p></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 col-xl-6">
+                                <div class="form-group">
+                                    <div class="form-label-line">
+                                        <label for="nombre"><i class="fas fa-chair field-label-icon" aria-hidden="true"></i>Nombre del tipo de mueble</label>
+                                        <span class="form-required" aria-hidden="true" title="Campo obligatorio">*</span>
+                                    </div>
+                                    <input id="nombre" name="nombre" type="text" value="{{ old('nombre', $tipoMueble->nombre) }}"
+                                        class="form-control @error('nombre') is-invalid @enderror"
+                                        aria-describedby="nombre-help @error('nombre') nombre-error @enderror"
+                                        @error('nombre') aria-invalid="true" @enderror
+                                        required maxlength="80">
+                                    <small id="nombre-help" class="form-text text-muted">{{ 'Por ejemplo: Ropero, Cómoda o Velador.' }}</small>
+                                    @error('nombre')
+                                        <span id="nombre-error" class="invalid-feedback d-block field-error" role="alert">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-xl-6"><div class="form-group">
+                                    <div class="form-label-line">
+                                        <label for="activo"><i class="fas fa-toggle-on field-label-icon" aria-hidden="true"></i>Estado</label>
+                                        <span class="form-required" aria-hidden="true" title="Campo obligatorio">*</span>
+                                    </div>
+                                    <select id="activo" name="activo" class="form-control @error('activo') is-invalid @enderror" required
+                                        aria-describedby="activo-help @error('activo') activo-error @enderror"
+                                        @error('activo') aria-invalid="true" @enderror>
+                                        <option value="1" @selected(old('activo', (int) ($tipoMueble->activo)) == 1)>Activo</option>
+                                        <option value="0" @selected(old('activo', (int) ($tipoMueble->activo)) == 0)>Inactivo</option>
+                                    </select>
+                                    <small id="activo-help" class="form-text text-muted">Los registros inactivos conservan su historial.</small>
+                                    @error('activo')
+                                        <span id="activo-error" class="invalid-feedback d-block field-error" role="alert">{{ $message }}</span>
+                                    @enderror
+                                </div></div>
+                            <div class="col-12 form-actions">
+                                <a class="btn btn-default btn-cancel" href="{{ route('admin.tipos_mueble.index') }}"><i class="fas fa-arrow-left mr-2" aria-hidden="true"></i>Cancelar</a>
+                                <button class="btn btn-success" type="submit"><i class="fas fa-save mr-2" aria-hidden="true"></i>Actualizar tipo de mueble</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+@stop

@@ -1,0 +1,2 @@
+@props(['title','icon','tone','valor'=>null,'note'=>null])
+<div class="col-12 col-sm-6 col-xl-3 mb-4"><article class="metric-card metric-{{ $tone }}" aria-label="{{ $title }}: {{ $valor===null?'módulo pendiente':$valor }}"><div class="metric-top"><h2>{{ $title }}</h2><span class="metric-icon"><i class="{{ $icon }}" aria-hidden="true"></i></span></div><p class="metric-value">{{ $valor ?? '—' }}</p><p class="metric-note">{{ $note ?? ($valor===null?'Módulo pendiente':'Datos registrados') }}</p></article></div>

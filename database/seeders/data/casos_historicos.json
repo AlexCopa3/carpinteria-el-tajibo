@@ -1,0 +1,1417 @@
+{
+  "lote": "casos_demostracion_20261109_v1",
+  "moneda": "BOB",
+  "simbolo": "Bs",
+  "dimensiones": "centimetros",
+  "alcance": "25 escenarios de muebles en melamina y madera para La Paz y El Alto. Precios y cantidades ilustrativos sin validación local, no cotizaciones de proveedores.",
+  "casos": [
+    {
+      "indice_lote": 1,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Miraflores",
+      "descripcion": "Escritorio para estudio o trabajo en vivienda",
+      "fecha_referencia": "2026-03-03",
+      "tipo_mueble": "escritorio",
+      "material_principal": "Melamina",
+      "largo_cm": "100",
+      "ancho_cm": "50",
+      "alto_cm": "75",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 1,
+      "acabado": "Melamina",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Melamina",
+          "unidad": "tablero",
+          "cantidad_total": "1.0000",
+          "costo_unitario_estimado_bs": "280.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "24.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Canto PVC",
+          "unidad": "metro",
+          "cantidad_total": "5.0000",
+          "costo_unitario_estimado_bs": "3.50"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "302.30",
+      "mano_obra_estimada_total_bs": "180.00",
+      "otros_costos_estimados_total_bs": "20.00",
+      "costo_estimado_total_bs": "502.30",
+      "precio_historico_ilustrativo_total_bs": "577.65",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 3,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Sopocachi",
+      "descripcion": "Escritorio para estudio o trabajo en vivienda",
+      "fecha_referencia": "2026-03-09",
+      "tipo_mueble": "escritorio",
+      "material_principal": "Madera",
+      "largo_cm": "140",
+      "ancho_cm": "60",
+      "alto_cm": "75",
+      "puertas": 1,
+      "cajones": 3,
+      "divisiones": 2,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "7.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "28.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Bisagra",
+          "unidad": "unidad",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "7.50"
+        },
+        {
+          "material": "Juego de correderas",
+          "unidad": "unidad",
+          "cantidad_total": "3.0000",
+          "costo_unitario_estimado_bs": "35.00"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.1500",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "0.5000",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "687.60",
+      "mano_obra_estimada_total_bs": "220.00",
+      "otros_costos_estimados_total_bs": "30.00",
+      "costo_estimado_total_bs": "937.60",
+      "precio_historico_ilustrativo_total_bs": "1172.00",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 4,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "El Alto · Villa Adela",
+      "descripcion": "Escritorio para estudio o trabajo en vivienda",
+      "fecha_referencia": "2026-03-12",
+      "tipo_mueble": "escritorio",
+      "material_principal": "Melamina",
+      "largo_cm": "110",
+      "ancho_cm": "55",
+      "alto_cm": "75",
+      "puertas": 0,
+      "cajones": 1,
+      "divisiones": 1,
+      "acabado": "Melamina",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Melamina",
+          "unidad": "tablero",
+          "cantidad_total": "1.0000",
+          "costo_unitario_estimado_bs": "280.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "30.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Juego de correderas",
+          "unidad": "unidad",
+          "cantidad_total": "1.0000",
+          "costo_unitario_estimado_bs": "35.00"
+        },
+        {
+          "material": "Canto PVC",
+          "unidad": "metro",
+          "cantidad_total": "5.0000",
+          "costo_unitario_estimado_bs": "3.50"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "338.50",
+      "mano_obra_estimada_total_bs": "240.00",
+      "otros_costos_estimados_total_bs": "35.00",
+      "costo_estimado_total_bs": "613.50",
+      "precio_historico_ilustrativo_total_bs": "797.55",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 6,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "El Alto · Río Seco",
+      "descripcion": "Escritorio para estudio o trabajo en vivienda",
+      "fecha_referencia": "2026-03-18",
+      "tipo_mueble": "escritorio",
+      "material_principal": "Madera",
+      "largo_cm": "130",
+      "ancho_cm": "60",
+      "alto_cm": "75",
+      "puertas": 0,
+      "cajones": 2,
+      "divisiones": 2,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "8.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "34.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Juego de correderas",
+          "unidad": "unidad",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "35.00"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.1500",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "0.5000",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "713.80",
+      "mano_obra_estimada_total_bs": "280.00",
+      "otros_costos_estimados_total_bs": "45.00",
+      "costo_estimado_total_bs": "1038.80",
+      "precio_historico_ilustrativo_total_bs": "1246.56",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 7,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Miraflores",
+      "descripcion": "Mesa para comedor o sala",
+      "fecha_referencia": "2026-04-03",
+      "tipo_mueble": "mesa",
+      "material_principal": "Melamina",
+      "largo_cm": "90",
+      "ancho_cm": "60",
+      "alto_cm": "75",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Melamina",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Melamina",
+          "unidad": "tablero",
+          "cantidad_total": "1.0000",
+          "costo_unitario_estimado_bs": "280.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "28.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Canto PVC",
+          "unidad": "metro",
+          "cantidad_total": "5.0000",
+          "costo_unitario_estimado_bs": "3.50"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "303.10",
+      "mano_obra_estimada_total_bs": "210.00",
+      "otros_costos_estimados_total_bs": "20.00",
+      "costo_estimado_total_bs": "533.10",
+      "precio_historico_ilustrativo_total_bs": "613.07",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 9,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Sopocachi",
+      "descripcion": "Mesa para comedor o sala",
+      "fecha_referencia": "2026-04-09",
+      "tipo_mueble": "mesa",
+      "material_principal": "Madera",
+      "largo_cm": "160",
+      "ancho_cm": "90",
+      "alto_cm": "76",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 2,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "16.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "64.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.3000",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "4.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "1.0000",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "1286.80",
+      "mano_obra_estimada_total_bs": "500.00",
+      "otros_costos_estimados_total_bs": "30.00",
+      "costo_estimado_total_bs": "1816.80",
+      "precio_historico_ilustrativo_total_bs": "2271.00",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 10,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "El Alto · Villa Adela",
+      "descripcion": "Mesa para comedor o sala",
+      "fecha_referencia": "2026-04-12",
+      "tipo_mueble": "mesa",
+      "material_principal": "Melamina",
+      "largo_cm": "80",
+      "ancho_cm": "50",
+      "alto_cm": "45",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 1,
+      "acabado": "Melamina",
+      "cantidad_muebles": 2,
+      "materiales": [
+        {
+          "material": "Melamina",
+          "unidad": "tablero",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "280.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "68.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Canto PVC",
+          "unidad": "metro",
+          "cantidad_total": "10.0000",
+          "costo_unitario_estimado_bs": "3.50"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "608.60",
+      "mano_obra_estimada_total_bs": "540.00",
+      "otros_costos_estimados_total_bs": "35.00",
+      "costo_estimado_total_bs": "1183.60",
+      "precio_historico_ilustrativo_total_bs": "1538.68",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 12,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "El Alto · Río Seco",
+      "descripcion": "Mesa para comedor o sala",
+      "fecha_referencia": "2026-04-18",
+      "tipo_mueble": "mesa",
+      "material_principal": "Madera",
+      "largo_cm": "180",
+      "ancho_cm": "90",
+      "alto_cm": "76",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "9.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "38.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.1500",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "0.5000",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "719.60",
+      "mano_obra_estimada_total_bs": "310.00",
+      "otros_costos_estimados_total_bs": "45.00",
+      "costo_estimado_total_bs": "1074.60",
+      "precio_historico_ilustrativo_total_bs": "1289.52",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 13,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Miraflores",
+      "descripcion": "Silla para comedor o escritorio",
+      "fecha_referencia": "2026-05-03",
+      "tipo_mueble": "silla",
+      "material_principal": "Madera",
+      "largo_cm": "42",
+      "ancho_cm": "42",
+      "alto_cm": "85",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 4,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "12.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "48.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.3200",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "8.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "0.4800",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "980.80",
+      "mano_obra_estimada_total_bs": "280.00",
+      "otros_costos_estimados_total_bs": "20.00",
+      "costo_estimado_total_bs": "1280.80",
+      "precio_historico_ilustrativo_total_bs": "1472.92",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 14,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "El Alto · Ciudad Satélite",
+      "descripcion": "Silla para comedor o escritorio",
+      "fecha_referencia": "2026-05-06",
+      "tipo_mueble": "silla",
+      "material_principal": "Madera",
+      "largo_cm": "45",
+      "ancho_cm": "45",
+      "alto_cm": "90",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 6,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "24.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "84.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.4800",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "12.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "0.7200",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "1923.60",
+      "mano_obra_estimada_total_bs": "540.00",
+      "otros_costos_estimados_total_bs": "25.00",
+      "costo_estimado_total_bs": "2488.60",
+      "precio_historico_ilustrativo_total_bs": "2986.32",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 15,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Sopocachi",
+      "descripcion": "Silla para comedor o escritorio",
+      "fecha_referencia": "2026-05-09",
+      "tipo_mueble": "silla",
+      "material_principal": "Madera",
+      "largo_cm": "48",
+      "ancho_cm": "46",
+      "alto_cm": "92",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 2,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "6.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "32.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.1600",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "4.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "0.2400",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "492.00",
+      "mano_obra_estimada_total_bs": "220.00",
+      "otros_costos_estimados_total_bs": "30.00",
+      "costo_estimado_total_bs": "742.00",
+      "precio_historico_ilustrativo_total_bs": "927.50",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 17,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · San Pedro",
+      "descripcion": "Silla para comedor o escritorio",
+      "fecha_referencia": "2026-05-15",
+      "tipo_mueble": "silla",
+      "material_principal": "Madera",
+      "largo_cm": "46",
+      "ancho_cm": "44",
+      "alto_cm": "88",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Sin acabado",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "3.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "20.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.0800",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "241.40",
+      "mano_obra_estimada_total_bs": "150.00",
+      "otros_costos_estimados_total_bs": "40.00",
+      "costo_estimado_total_bs": "431.40",
+      "precio_historico_ilustrativo_total_bs": "496.11",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 18,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "El Alto · Río Seco",
+      "descripcion": "Silla para comedor o escritorio",
+      "fecha_referencia": "2026-05-18",
+      "tipo_mueble": "silla",
+      "material_principal": "Madera",
+      "largo_cm": "44",
+      "ancho_cm": "43",
+      "alto_cm": "87",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 6,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "24.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "132.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.4800",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "12.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "0.7200",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "1933.20",
+      "mano_obra_estimada_total_bs": "1020.00",
+      "otros_costos_estimados_total_bs": "45.00",
+      "costo_estimado_total_bs": "2998.20",
+      "precio_historico_ilustrativo_total_bs": "3597.84",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 19,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Miraflores",
+      "descripcion": "Armario para dormitorio",
+      "fecha_referencia": "2026-06-03",
+      "tipo_mueble": "armario",
+      "material_principal": "Melamina",
+      "largo_cm": "90",
+      "ancho_cm": "50",
+      "alto_cm": "180",
+      "puertas": 2,
+      "cajones": 0,
+      "divisiones": 3,
+      "acabado": "Melamina",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Melamina",
+          "unidad": "tablero",
+          "cantidad_total": "3.0000",
+          "costo_unitario_estimado_bs": "280.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "60.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Bisagra",
+          "unidad": "unidad",
+          "cantidad_total": "4.0000",
+          "costo_unitario_estimado_bs": "7.50"
+        },
+        {
+          "material": "Canto PVC",
+          "unidad": "metro",
+          "cantidad_total": "12.0000",
+          "costo_unitario_estimado_bs": "3.50"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "924.00",
+      "mano_obra_estimada_total_bs": "550.00",
+      "otros_costos_estimados_total_bs": "20.00",
+      "costo_estimado_total_bs": "1494.00",
+      "precio_historico_ilustrativo_total_bs": "1718.10",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 21,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Sopocachi",
+      "descripcion": "Armario para dormitorio",
+      "fecha_referencia": "2026-06-09",
+      "tipo_mueble": "armario",
+      "material_principal": "Madera",
+      "largo_cm": "180",
+      "ancho_cm": "60",
+      "alto_cm": "210",
+      "puertas": 3,
+      "cajones": 3,
+      "divisiones": 6,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "16.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "64.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Bisagra",
+          "unidad": "unidad",
+          "cantidad_total": "6.0000",
+          "costo_unitario_estimado_bs": "7.50"
+        },
+        {
+          "material": "Juego de correderas",
+          "unidad": "unidad",
+          "cantidad_total": "3.0000",
+          "costo_unitario_estimado_bs": "35.00"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.1500",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "5.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "1.5000",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "1459.80",
+      "mano_obra_estimada_total_bs": "590.00",
+      "otros_costos_estimados_total_bs": "30.00",
+      "costo_estimado_total_bs": "2079.80",
+      "precio_historico_ilustrativo_total_bs": "2599.75",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 22,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "El Alto · Villa Adela",
+      "descripcion": "Armario para dormitorio",
+      "fecha_referencia": "2026-06-12",
+      "tipo_mueble": "armario",
+      "material_principal": "Melamina",
+      "largo_cm": "80",
+      "ancho_cm": "45",
+      "alto_cm": "170",
+      "puertas": 2,
+      "cajones": 1,
+      "divisiones": 3,
+      "acabado": "Melamina",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Melamina",
+          "unidad": "tablero",
+          "cantidad_total": "3.0000",
+          "costo_unitario_estimado_bs": "280.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "66.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Bisagra",
+          "unidad": "unidad",
+          "cantidad_total": "4.0000",
+          "costo_unitario_estimado_bs": "7.50"
+        },
+        {
+          "material": "Juego de correderas",
+          "unidad": "unidad",
+          "cantidad_total": "1.0000",
+          "costo_unitario_estimado_bs": "35.00"
+        },
+        {
+          "material": "Canto PVC",
+          "unidad": "metro",
+          "cantidad_total": "12.0000",
+          "costo_unitario_estimado_bs": "3.50"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "960.20",
+      "mano_obra_estimada_total_bs": "610.00",
+      "otros_costos_estimados_total_bs": "35.00",
+      "costo_estimado_total_bs": "1605.20",
+      "precio_historico_ilustrativo_total_bs": "2086.76",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 24,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "El Alto · Río Seco",
+      "descripcion": "Armario para dormitorio",
+      "fecha_referencia": "2026-06-18",
+      "tipo_mueble": "armario",
+      "material_principal": "Madera",
+      "largo_cm": "200",
+      "ancho_cm": "60",
+      "alto_cm": "220",
+      "puertas": 4,
+      "cajones": 4,
+      "divisiones": 8,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "17.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "70.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Bisagra",
+          "unidad": "unidad",
+          "cantidad_total": "8.0000",
+          "costo_unitario_estimado_bs": "7.50"
+        },
+        {
+          "material": "Juego de correderas",
+          "unidad": "unidad",
+          "cantidad_total": "4.0000",
+          "costo_unitario_estimado_bs": "35.00"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.1500",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "5.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "1.5000",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "1586.00",
+      "mano_obra_estimada_total_bs": "650.00",
+      "otros_costos_estimados_total_bs": "45.00",
+      "costo_estimado_total_bs": "2281.00",
+      "precio_historico_ilustrativo_total_bs": "2737.20",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 25,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Miraflores",
+      "descripcion": "Estante para libros o almacenamiento doméstico",
+      "fecha_referencia": "2026-07-03",
+      "tipo_mueble": "estante",
+      "material_principal": "Melamina",
+      "largo_cm": "60",
+      "ancho_cm": "30",
+      "alto_cm": "150",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 4,
+      "acabado": "Melamina",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Melamina",
+          "unidad": "tablero",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "280.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "32.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Canto PVC",
+          "unidad": "metro",
+          "cantidad_total": "9.0000",
+          "costo_unitario_estimado_bs": "3.50"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "597.90",
+      "mano_obra_estimada_total_bs": "220.00",
+      "otros_costos_estimados_total_bs": "20.00",
+      "costo_estimado_total_bs": "837.90",
+      "precio_historico_ilustrativo_total_bs": "963.59",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 27,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Sopocachi",
+      "descripcion": "Estante para libros o almacenamiento doméstico",
+      "fecha_referencia": "2026-07-09",
+      "tipo_mueble": "estante",
+      "material_principal": "Madera",
+      "largo_cm": "120",
+      "ancho_cm": "35",
+      "alto_cm": "180",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 6,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "9.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "36.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.1500",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "0.5000",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "719.20",
+      "mano_obra_estimada_total_bs": "260.00",
+      "otros_costos_estimados_total_bs": "30.00",
+      "costo_estimado_total_bs": "1009.20",
+      "precio_historico_ilustrativo_total_bs": "1261.50",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 28,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "El Alto · Villa Adela",
+      "descripcion": "Estante para libros o almacenamiento doméstico",
+      "fecha_referencia": "2026-07-12",
+      "tipo_mueble": "estante",
+      "material_principal": "Melamina",
+      "largo_cm": "70",
+      "ancho_cm": "30",
+      "alto_cm": "120",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 3,
+      "acabado": "Melamina",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Melamina",
+          "unidad": "tablero",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "280.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "38.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Canto PVC",
+          "unidad": "metro",
+          "cantidad_total": "9.0000",
+          "costo_unitario_estimado_bs": "3.50"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "599.10",
+      "mano_obra_estimada_total_bs": "280.00",
+      "otros_costos_estimados_total_bs": "35.00",
+      "costo_estimado_total_bs": "914.10",
+      "precio_historico_ilustrativo_total_bs": "1188.33",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 30,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "El Alto · Río Seco",
+      "descripcion": "Estante para libros o almacenamiento doméstico",
+      "fecha_referencia": "2026-07-18",
+      "tipo_mueble": "estante",
+      "material_principal": "Madera",
+      "largo_cm": "90",
+      "ancho_cm": "35",
+      "alto_cm": "160",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 4,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "10.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "42.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.1500",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "0.5000",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "795.40",
+      "mano_obra_estimada_total_bs": "320.00",
+      "otros_costos_estimados_total_bs": "45.00",
+      "costo_estimado_total_bs": "1160.40",
+      "precio_historico_ilustrativo_total_bs": "1392.48",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 31,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Miraflores",
+      "descripcion": "Hoja de puerta interior; dimensiones largo × espesor × alto",
+      "fecha_referencia": "2026-08-03",
+      "tipo_mueble": "puerta",
+      "material_principal": "Madera",
+      "largo_cm": "80",
+      "ancho_cm": "4",
+      "alto_cm": "200",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "10.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "16.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.1500",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "0.7000",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "799.20",
+      "mano_obra_estimada_total_bs": "250.00",
+      "otros_costos_estimados_total_bs": "20.00",
+      "costo_estimado_total_bs": "1069.20",
+      "precio_historico_ilustrativo_total_bs": "1229.58",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 32,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "El Alto · Ciudad Satélite",
+      "descripcion": "Hoja de puerta interior; dimensiones largo × espesor × alto",
+      "fecha_referencia": "2026-08-06",
+      "tipo_mueble": "puerta",
+      "material_principal": "Madera",
+      "largo_cm": "90",
+      "ancho_cm": "4",
+      "alto_cm": "210",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 2,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "22.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "36.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.3000",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "4.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "1.4000",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "1749.20",
+      "mano_obra_estimada_total_bs": "540.00",
+      "otros_costos_estimados_total_bs": "25.00",
+      "costo_estimado_total_bs": "2314.20",
+      "precio_historico_ilustrativo_total_bs": "2777.04",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 33,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · Sopocachi",
+      "descripcion": "Hoja de puerta interior; dimensiones largo × espesor × alto",
+      "fecha_referencia": "2026-08-09",
+      "tipo_mueble": "puerta",
+      "material_principal": "Madera",
+      "largo_cm": "75",
+      "ancho_cm": "4",
+      "alto_cm": "200",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Barnizado natural",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "10.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "20.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.1500",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        },
+        {
+          "material": "Barniz",
+          "unidad": "litro",
+          "cantidad_total": "0.7000",
+          "costo_unitario_estimado_bs": "45.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "800.00",
+      "mano_obra_estimada_total_bs": "290.00",
+      "otros_costos_estimados_total_bs": "30.00",
+      "costo_estimado_total_bs": "1120.00",
+      "precio_historico_ilustrativo_total_bs": "1400.00",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    },
+    {
+      "indice_lote": 35,
+      "origen": "simulado",
+      "estado_revision": "pendiente",
+      "revisado_por_id": null,
+      "revisado_at": null,
+      "contexto": "La Paz · San Pedro",
+      "descripcion": "Hoja de puerta interior; dimensiones largo × espesor × alto",
+      "fecha_referencia": "2026-08-15",
+      "tipo_mueble": "puerta",
+      "material_principal": "Madera",
+      "largo_cm": "100",
+      "ancho_cm": "5",
+      "alto_cm": "210",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "acabado": "Sin acabado",
+      "cantidad_muebles": 1,
+      "materiales": [
+        {
+          "material": "Madera",
+          "unidad": "pieza",
+          "cantidad_total": "10.0000",
+          "costo_unitario_estimado_bs": "75.00"
+        },
+        {
+          "material": "Tornillo",
+          "unidad": "unidad",
+          "cantidad_total": "24.0000",
+          "costo_unitario_estimado_bs": "0.20"
+        },
+        {
+          "material": "Cola para madera",
+          "unidad": "litro",
+          "cantidad_total": "0.1500",
+          "costo_unitario_estimado_bs": "30.00"
+        },
+        {
+          "material": "Lija",
+          "unidad": "unidad",
+          "cantidad_total": "2.0000",
+          "costo_unitario_estimado_bs": "5.00"
+        }
+      ],
+      "costo_materiales_estimado_total_bs": "769.30",
+      "mano_obra_estimada_total_bs": "330.00",
+      "otros_costos_estimados_total_bs": "40.00",
+      "costo_estimado_total_bs": "1139.30",
+      "precio_historico_ilustrativo_total_bs": "1310.20",
+      "observaciones": "Escenario sintético para revisión local. Las cantidades son una referencia ilustrativa; no son un despiece validado ni evidencia de consumo real."
+    }
+  ]
+}

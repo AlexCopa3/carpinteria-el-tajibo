@@ -1,0 +1,1091 @@
+{
+  "version": "casos-historicos-v3-umbral-70",
+  "aprobacion": "Umbral del 70 % autorizado por el usuario el 17/11/2026. No acredita validación comercial ni humana de los datos.",
+  "parametros": {
+    "distancia": "gower_ponderada",
+    "normalizacion": "rangos_fijos_por_tipo",
+    "pesos": {
+      "largo_cm": 15,
+      "ancho_cm": 15,
+      "alto_cm": 15,
+      "material_principal_id": 25,
+      "acabado": 10,
+      "puertas": 5,
+      "cajones": 5,
+      "divisiones": 5,
+      "cantidad_muebles": 5
+    },
+    "k": 3,
+    "umbral": "70",
+    "maximo_resultados": 3
+  },
+  "lote": "casos_demostracion_20261109_v1",
+  "referencias": [
+    {
+      "posicion_lote": 1,
+      "tipo_codigo": "escritorio",
+      "principal": "Melamina",
+      "largo_cm": "100.0000",
+      "ancho_cm": "50.0000",
+      "alto_cm": "75.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 1,
+      "cantidad_muebles": 1,
+      "acabado": "Melamina"
+    },
+    {
+      "posicion_lote": 3,
+      "tipo_codigo": "escritorio",
+      "principal": "Madera",
+      "largo_cm": "140.0000",
+      "ancho_cm": "60.0000",
+      "alto_cm": "75.0000",
+      "puertas": 1,
+      "cajones": 3,
+      "divisiones": 2,
+      "cantidad_muebles": 1,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 4,
+      "tipo_codigo": "escritorio",
+      "principal": "Melamina",
+      "largo_cm": "110.0000",
+      "ancho_cm": "55.0000",
+      "alto_cm": "75.0000",
+      "puertas": 0,
+      "cajones": 1,
+      "divisiones": 1,
+      "cantidad_muebles": 1,
+      "acabado": "Melamina"
+    },
+    {
+      "posicion_lote": 6,
+      "tipo_codigo": "escritorio",
+      "principal": "Madera",
+      "largo_cm": "130.0000",
+      "ancho_cm": "60.0000",
+      "alto_cm": "75.0000",
+      "puertas": 0,
+      "cajones": 2,
+      "divisiones": 2,
+      "cantidad_muebles": 1,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 7,
+      "tipo_codigo": "mesa",
+      "principal": "Melamina",
+      "largo_cm": "90.0000",
+      "ancho_cm": "60.0000",
+      "alto_cm": "75.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 1,
+      "acabado": "Melamina"
+    },
+    {
+      "posicion_lote": 9,
+      "tipo_codigo": "mesa",
+      "principal": "Madera",
+      "largo_cm": "160.0000",
+      "ancho_cm": "90.0000",
+      "alto_cm": "76.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 2,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 10,
+      "tipo_codigo": "mesa",
+      "principal": "Melamina",
+      "largo_cm": "80.0000",
+      "ancho_cm": "50.0000",
+      "alto_cm": "45.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 1,
+      "cantidad_muebles": 2,
+      "acabado": "Melamina"
+    },
+    {
+      "posicion_lote": 12,
+      "tipo_codigo": "mesa",
+      "principal": "Madera",
+      "largo_cm": "180.0000",
+      "ancho_cm": "90.0000",
+      "alto_cm": "76.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 1,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 13,
+      "tipo_codigo": "silla",
+      "principal": "Madera",
+      "largo_cm": "42.0000",
+      "ancho_cm": "42.0000",
+      "alto_cm": "85.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 4,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 14,
+      "tipo_codigo": "silla",
+      "principal": "Madera",
+      "largo_cm": "45.0000",
+      "ancho_cm": "45.0000",
+      "alto_cm": "90.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 6,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 15,
+      "tipo_codigo": "silla",
+      "principal": "Madera",
+      "largo_cm": "48.0000",
+      "ancho_cm": "46.0000",
+      "alto_cm": "92.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 2,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 17,
+      "tipo_codigo": "silla",
+      "principal": "Madera",
+      "largo_cm": "46.0000",
+      "ancho_cm": "44.0000",
+      "alto_cm": "88.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 1,
+      "acabado": "Sin acabado"
+    },
+    {
+      "posicion_lote": 18,
+      "tipo_codigo": "silla",
+      "principal": "Madera",
+      "largo_cm": "44.0000",
+      "ancho_cm": "43.0000",
+      "alto_cm": "87.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 6,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 19,
+      "tipo_codigo": "armario",
+      "principal": "Melamina",
+      "largo_cm": "90.0000",
+      "ancho_cm": "50.0000",
+      "alto_cm": "180.0000",
+      "puertas": 2,
+      "cajones": 0,
+      "divisiones": 3,
+      "cantidad_muebles": 1,
+      "acabado": "Melamina"
+    },
+    {
+      "posicion_lote": 21,
+      "tipo_codigo": "armario",
+      "principal": "Madera",
+      "largo_cm": "180.0000",
+      "ancho_cm": "60.0000",
+      "alto_cm": "210.0000",
+      "puertas": 3,
+      "cajones": 3,
+      "divisiones": 6,
+      "cantidad_muebles": 1,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 22,
+      "tipo_codigo": "armario",
+      "principal": "Melamina",
+      "largo_cm": "80.0000",
+      "ancho_cm": "45.0000",
+      "alto_cm": "170.0000",
+      "puertas": 2,
+      "cajones": 1,
+      "divisiones": 3,
+      "cantidad_muebles": 1,
+      "acabado": "Melamina"
+    },
+    {
+      "posicion_lote": 24,
+      "tipo_codigo": "armario",
+      "principal": "Madera",
+      "largo_cm": "200.0000",
+      "ancho_cm": "60.0000",
+      "alto_cm": "220.0000",
+      "puertas": 4,
+      "cajones": 4,
+      "divisiones": 8,
+      "cantidad_muebles": 1,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 25,
+      "tipo_codigo": "estante",
+      "principal": "Melamina",
+      "largo_cm": "60.0000",
+      "ancho_cm": "30.0000",
+      "alto_cm": "150.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 4,
+      "cantidad_muebles": 1,
+      "acabado": "Melamina"
+    },
+    {
+      "posicion_lote": 27,
+      "tipo_codigo": "estante",
+      "principal": "Madera",
+      "largo_cm": "120.0000",
+      "ancho_cm": "35.0000",
+      "alto_cm": "180.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 6,
+      "cantidad_muebles": 1,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 28,
+      "tipo_codigo": "estante",
+      "principal": "Melamina",
+      "largo_cm": "70.0000",
+      "ancho_cm": "30.0000",
+      "alto_cm": "120.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 3,
+      "cantidad_muebles": 1,
+      "acabado": "Melamina"
+    },
+    {
+      "posicion_lote": 30,
+      "tipo_codigo": "estante",
+      "principal": "Madera",
+      "largo_cm": "90.0000",
+      "ancho_cm": "35.0000",
+      "alto_cm": "160.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 4,
+      "cantidad_muebles": 1,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 31,
+      "tipo_codigo": "puerta",
+      "principal": "Madera",
+      "largo_cm": "80.0000",
+      "ancho_cm": "4.0000",
+      "alto_cm": "200.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 1,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 32,
+      "tipo_codigo": "puerta",
+      "principal": "Madera",
+      "largo_cm": "90.0000",
+      "ancho_cm": "4.0000",
+      "alto_cm": "210.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 2,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 33,
+      "tipo_codigo": "puerta",
+      "principal": "Madera",
+      "largo_cm": "75.0000",
+      "ancho_cm": "4.0000",
+      "alto_cm": "200.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 1,
+      "acabado": "Barnizado natural"
+    },
+    {
+      "posicion_lote": 35,
+      "tipo_codigo": "puerta",
+      "principal": "Madera",
+      "largo_cm": "100.0000",
+      "ancho_cm": "5.0000",
+      "alto_cm": "210.0000",
+      "puertas": 0,
+      "cajones": 0,
+      "divisiones": 0,
+      "cantidad_muebles": 1,
+      "acabado": "Sin acabado"
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 36,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "40",
+      "ancho_cm": "35",
+      "alto_cm": "50",
+      "puertas": 0,
+      "cajones": 1,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 37,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "80",
+      "ancho_cm": "40",
+      "alto_cm": "80",
+      "puertas": 0,
+      "cajones": 3,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 38,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "75",
+      "ancho_cm": "35",
+      "alto_cm": "160",
+      "puertas": 2,
+      "cajones": 0,
+      "divisiones": 3,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 39,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "42",
+      "ancho_cm": "38",
+      "alto_cm": "54",
+      "puertas": 1,
+      "cajones": 2,
+      "divisiones": 1,
+      "cantidad_muebles": 2
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 40,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "84",
+      "ancho_cm": "43",
+      "alto_cm": "85",
+      "puertas": 0,
+      "cajones": 4,
+      "divisiones": 0,
+      "cantidad_muebles": 2
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 41,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "80",
+      "ancho_cm": "39",
+      "alto_cm": "170",
+      "puertas": 4,
+      "cajones": 1,
+      "divisiones": 4,
+      "cantidad_muebles": 2
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 42,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "44",
+      "ancho_cm": "41",
+      "alto_cm": "58",
+      "puertas": 0,
+      "cajones": 1,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 43,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "88",
+      "ancho_cm": "46",
+      "alto_cm": "90",
+      "puertas": 0,
+      "cajones": 5,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 44,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "85",
+      "ancho_cm": "43",
+      "alto_cm": "180",
+      "puertas": 2,
+      "cajones": 2,
+      "divisiones": 5,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 45,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "46",
+      "ancho_cm": "35",
+      "alto_cm": "62",
+      "puertas": 1,
+      "cajones": 2,
+      "divisiones": 1,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 46,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "92",
+      "ancho_cm": "40",
+      "alto_cm": "95",
+      "puertas": 0,
+      "cajones": 6,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 47,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "90",
+      "ancho_cm": "35",
+      "alto_cm": "190",
+      "puertas": 4,
+      "cajones": 0,
+      "divisiones": 3,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 48,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "48",
+      "ancho_cm": "38",
+      "alto_cm": "50",
+      "puertas": 0,
+      "cajones": 1,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 49,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "96",
+      "ancho_cm": "43",
+      "alto_cm": "80",
+      "puertas": 0,
+      "cajones": 3,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 50,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "95",
+      "ancho_cm": "39",
+      "alto_cm": "160",
+      "puertas": 2,
+      "cajones": 1,
+      "divisiones": 4,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 51,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "50",
+      "ancho_cm": "41",
+      "alto_cm": "54",
+      "puertas": 1,
+      "cajones": 2,
+      "divisiones": 1,
+      "cantidad_muebles": 2
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 52,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "100",
+      "ancho_cm": "46",
+      "alto_cm": "85",
+      "puertas": 0,
+      "cajones": 4,
+      "divisiones": 0,
+      "cantidad_muebles": 2
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 53,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "100",
+      "ancho_cm": "43",
+      "alto_cm": "170",
+      "puertas": 4,
+      "cajones": 2,
+      "divisiones": 5,
+      "cantidad_muebles": 2
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 54,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "52",
+      "ancho_cm": "35",
+      "alto_cm": "58",
+      "puertas": 0,
+      "cajones": 1,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 55,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "104",
+      "ancho_cm": "40",
+      "alto_cm": "90",
+      "puertas": 0,
+      "cajones": 5,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 56,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "105",
+      "ancho_cm": "35",
+      "alto_cm": "180",
+      "puertas": 2,
+      "cajones": 0,
+      "divisiones": 3,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 57,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "54",
+      "ancho_cm": "38",
+      "alto_cm": "62",
+      "puertas": 1,
+      "cajones": 2,
+      "divisiones": 1,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 58,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "108",
+      "ancho_cm": "43",
+      "alto_cm": "95",
+      "puertas": 0,
+      "cajones": 6,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 59,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "110",
+      "ancho_cm": "39",
+      "alto_cm": "190",
+      "puertas": 4,
+      "cajones": 1,
+      "divisiones": 4,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 60,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "56",
+      "ancho_cm": "41",
+      "alto_cm": "50",
+      "puertas": 0,
+      "cajones": 1,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 61,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "112",
+      "ancho_cm": "46",
+      "alto_cm": "80",
+      "puertas": 0,
+      "cajones": 3,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 62,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "115",
+      "ancho_cm": "43",
+      "alto_cm": "160",
+      "puertas": 2,
+      "cajones": 2,
+      "divisiones": 5,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 63,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "58",
+      "ancho_cm": "35",
+      "alto_cm": "54",
+      "puertas": 1,
+      "cajones": 2,
+      "divisiones": 1,
+      "cantidad_muebles": 2
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 64,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "116",
+      "ancho_cm": "40",
+      "alto_cm": "85",
+      "puertas": 0,
+      "cajones": 4,
+      "divisiones": 0,
+      "cantidad_muebles": 2
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 65,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "120",
+      "ancho_cm": "35",
+      "alto_cm": "170",
+      "puertas": 4,
+      "cajones": 0,
+      "divisiones": 3,
+      "cantidad_muebles": 2
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 66,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "60",
+      "ancho_cm": "38",
+      "alto_cm": "58",
+      "puertas": 0,
+      "cajones": 1,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 67,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "120",
+      "ancho_cm": "43",
+      "alto_cm": "90",
+      "puertas": 0,
+      "cajones": 5,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 68,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "125",
+      "ancho_cm": "39",
+      "alto_cm": "180",
+      "puertas": 2,
+      "cajones": 1,
+      "divisiones": 4,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "velador",
+      "posicion_lote": 69,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "62",
+      "ancho_cm": "41",
+      "alto_cm": "62",
+      "puertas": 1,
+      "cajones": 2,
+      "divisiones": 1,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "comoda",
+      "posicion_lote": 70,
+      "principal": "Melamina",
+      "acabado": "Melamina",
+      "largo_cm": "124",
+      "ancho_cm": "46",
+      "alto_cm": "95",
+      "puertas": 0,
+      "cajones": 6,
+      "divisiones": 0,
+      "cantidad_muebles": 1
+    },
+    {
+      "tipo_codigo": "vitrina",
+      "posicion_lote": 71,
+      "principal": "Madera",
+      "acabado": "Barnizado natural",
+      "largo_cm": "130",
+      "ancho_cm": "43",
+      "alto_cm": "190",
+      "puertas": 4,
+      "cajones": 2,
+      "divisiones": 5,
+      "cantidad_muebles": 1
+    }
+  ],
+  "rangos": {
+    "escritorio": {
+      "largo_cm": {
+        "min": "100.0000",
+        "max": "140.0000"
+      },
+      "ancho_cm": {
+        "min": "50.0000",
+        "max": "60.0000"
+      },
+      "alto_cm": {
+        "min": "75.0000",
+        "max": "75.0000"
+      },
+      "puertas": {
+        "min": "0.0000",
+        "max": "1.0000"
+      },
+      "cajones": {
+        "min": "0.0000",
+        "max": "3.0000"
+      },
+      "divisiones": {
+        "min": "1.0000",
+        "max": "2.0000"
+      },
+      "cantidad_muebles": {
+        "min": "1.0000",
+        "max": "1.0000"
+      }
+    },
+    "mesa": {
+      "largo_cm": {
+        "min": "80.0000",
+        "max": "180.0000"
+      },
+      "ancho_cm": {
+        "min": "50.0000",
+        "max": "90.0000"
+      },
+      "alto_cm": {
+        "min": "45.0000",
+        "max": "76.0000"
+      },
+      "puertas": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "cajones": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "divisiones": {
+        "min": "0.0000",
+        "max": "1.0000"
+      },
+      "cantidad_muebles": {
+        "min": "1.0000",
+        "max": "2.0000"
+      }
+    },
+    "silla": {
+      "largo_cm": {
+        "min": "42.0000",
+        "max": "48.0000"
+      },
+      "ancho_cm": {
+        "min": "42.0000",
+        "max": "46.0000"
+      },
+      "alto_cm": {
+        "min": "85.0000",
+        "max": "92.0000"
+      },
+      "puertas": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "cajones": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "divisiones": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "cantidad_muebles": {
+        "min": "1.0000",
+        "max": "6.0000"
+      }
+    },
+    "armario": {
+      "largo_cm": {
+        "min": "80.0000",
+        "max": "200.0000"
+      },
+      "ancho_cm": {
+        "min": "45.0000",
+        "max": "60.0000"
+      },
+      "alto_cm": {
+        "min": "170.0000",
+        "max": "220.0000"
+      },
+      "puertas": {
+        "min": "2.0000",
+        "max": "4.0000"
+      },
+      "cajones": {
+        "min": "0.0000",
+        "max": "4.0000"
+      },
+      "divisiones": {
+        "min": "3.0000",
+        "max": "8.0000"
+      },
+      "cantidad_muebles": {
+        "min": "1.0000",
+        "max": "1.0000"
+      }
+    },
+    "estante": {
+      "largo_cm": {
+        "min": "60.0000",
+        "max": "120.0000"
+      },
+      "ancho_cm": {
+        "min": "30.0000",
+        "max": "35.0000"
+      },
+      "alto_cm": {
+        "min": "120.0000",
+        "max": "180.0000"
+      },
+      "puertas": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "cajones": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "divisiones": {
+        "min": "3.0000",
+        "max": "6.0000"
+      },
+      "cantidad_muebles": {
+        "min": "1.0000",
+        "max": "1.0000"
+      }
+    },
+    "puerta": {
+      "largo_cm": {
+        "min": "75.0000",
+        "max": "100.0000"
+      },
+      "ancho_cm": {
+        "min": "4.0000",
+        "max": "5.0000"
+      },
+      "alto_cm": {
+        "min": "200.0000",
+        "max": "210.0000"
+      },
+      "puertas": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "cajones": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "divisiones": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "cantidad_muebles": {
+        "min": "1.0000",
+        "max": "2.0000"
+      }
+    },
+    "velador": {
+      "largo_cm": {
+        "min": "40.0000",
+        "max": "62.0000"
+      },
+      "ancho_cm": {
+        "min": "35.0000",
+        "max": "41.0000"
+      },
+      "alto_cm": {
+        "min": "50.0000",
+        "max": "62.0000"
+      },
+      "puertas": {
+        "min": "0.0000",
+        "max": "1.0000"
+      },
+      "cajones": {
+        "min": "1.0000",
+        "max": "2.0000"
+      },
+      "divisiones": {
+        "min": "0.0000",
+        "max": "1.0000"
+      },
+      "cantidad_muebles": {
+        "min": "1.0000",
+        "max": "2.0000"
+      }
+    },
+    "comoda": {
+      "largo_cm": {
+        "min": "80.0000",
+        "max": "124.0000"
+      },
+      "ancho_cm": {
+        "min": "40.0000",
+        "max": "46.0000"
+      },
+      "alto_cm": {
+        "min": "80.0000",
+        "max": "95.0000"
+      },
+      "puertas": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "cajones": {
+        "min": "3.0000",
+        "max": "6.0000"
+      },
+      "divisiones": {
+        "min": "0.0000",
+        "max": "0.0000"
+      },
+      "cantidad_muebles": {
+        "min": "1.0000",
+        "max": "2.0000"
+      }
+    },
+    "vitrina": {
+      "largo_cm": {
+        "min": "75.0000",
+        "max": "130.0000"
+      },
+      "ancho_cm": {
+        "min": "35.0000",
+        "max": "43.0000"
+      },
+      "alto_cm": {
+        "min": "160.0000",
+        "max": "190.0000"
+      },
+      "puertas": {
+        "min": "2.0000",
+        "max": "4.0000"
+      },
+      "cajones": {
+        "min": "0.0000",
+        "max": "2.0000"
+      },
+      "divisiones": {
+        "min": "3.0000",
+        "max": "5.0000"
+      },
+      "cantidad_muebles": {
+        "min": "1.0000",
+        "max": "2.0000"
+      }
+    }
+  },
+  "procedencia": "Se conservan las 61 referencias, rangos por tipo, distancia, pesos, k y máximo de tres resultados del perfil v2. Solo se reduce el umbral del 80 al 70 % por solicitud del usuario."
+}
