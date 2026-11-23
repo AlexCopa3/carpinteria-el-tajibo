@@ -1,0 +1,155 @@
+// Modelo generado del esquema declarado en las migraciones de Laravel.
+// No contiene registros, credenciales ni cambios sobre MySQL.
+// Las relaciones polimorficas de Spatie no se convierten en FK inexistentes.
+
+Project carpinteria_el_tajibo {
+  database_type: 'MySQL'
+}
+
+Table "users" {
+  "id" bigint [pk, not null, increment]
+  "name" varchar(255) [not null]
+  "email" varchar(255) [not null]
+  "password_temporal" tinyint(1) [not null, default: "0"]
+  "email_verified_at" timestamp
+  "password" varchar(255) [not null]
+  "activo" tinyint(1) [not null, default: "1"]
+  "remember_token" varchar(100)
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    "email" [unique, name: 'users_email_unique']
+  }
+}
+
+Table "personal" {
+  "id" bigint [pk, not null, increment]
+  "user_id" bigint [not null]
+  "tipo_identificacion" varchar(20)
+  "numero_identificacion" varchar(30)
+  "telefono" varchar(50)
+  "direccion" varchar(255)
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("tipo_identificacion", "numero_identificacion") [unique, name: 'personal_identificacion_unique']
+    "user_id" [unique, name: 'personal_user_id_unique']
+  }
+}
+
+Table "roles" {
+  "id" bigint [pk, not null, increment]
+  "name" varchar(255) [not null]
+  "guard_name" varchar(255) [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("name", "guard_name") [unique, name: 'roles_name_guard_name_unique']
+  }
+}
+
+Table "permissions" {
+  "id" bigint [pk, not null, increment]
+  "name" varchar(255) [not null]
+  "guard_name" varchar(255) [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("name", "guard_name") [unique, name: 'permissions_name_guard_name_unique']
+  }
+}
+
+Table "model_has_roles" {
+  "role_id" bigint [not null]
+  "model_type" varchar(255) [not null]
+  "model_id" bigint [not null]
+
+Indexes {
+  (role_id, model_id, model_type) [pk]
+}
+
+  Indexes {
+    ("model_id", "model_type") [name: 'model_has_roles_model_id_model_type_index']
+  }
+}
+
+Table "model_has_permissions" {
+  "permission_id" bigint [not null]
+  "model_type" varchar(255) [not null]
+  "model_id" bigint [not null]
+
+Indexes {
+  (permission_id, model_id, model_type) [pk]
+}
+
+  Indexes {
+    ("model_id", "model_type") [name: 'model_has_permissions_model_id_model_type_index']
+  }
+}
+
+Table "role_has_permissions" {
+  "permission_id" bigint [not null]
+  "role_id" bigint [not null]
+
+Indexes {
+  (permission_id, role_id) [pk]
+}
+}
+
+Table "permisos_usuario" {
+  "id" bigint [pk, not null, increment]
+  "user_id" bigint [not null]
+  "permission_id" bigint [not null]
+  "permitido" tinyint(1) [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("user_id", "permission_id") [unique, name: 'permisos_usuario_user_id_permission_id_unique']
+  }
+}
+
+Table "ajustes" {
+  "id" bigint [pk, not null, increment]
+  "nombre" varchar(255) [not null]
+  "descripcion" varchar(500)
+  "direccion" varchar(255) [not null]
+  "telefono" varchar(50) [not null]
+  "email" varchar(255) [not null]
+  "web" varchar(255)
+  "logo" varchar(255)
+  "created_at" timestamp
+  "updated_at" timestamp
+}
+
+Table "sessions" {
+  "id" varchar(255) [pk, not null]
+  "user_id" bigint
+  "ip_address" varchar(45)
+  "user_agent" text
+  "payload" longtext [not null]
+  "last_activity" int [not null]
+
+  Indexes {
+    "user_id" [name: 'sessions_user_id_index']
+    "last_activity" [name: 'sessions_last_activity_index']
+  }
+}
+
+Table "password_reset_tokens" {
+  "email" varchar(255) [pk, not null]
+  "token" varchar(255) [not null]
+  "created_at" timestamp
+}
+
+Ref "model_has_permissions_permission_id_foreign":"permissions"."id" < "model_has_permissions"."permission_id" [delete: cascade]
+Ref "model_has_roles_role_id_foreign":"roles"."id" < "model_has_roles"."role_id" [delete: cascade]
+Ref "role_has_permissions_permission_id_foreign":"permissions"."id" < "role_has_permissions"."permission_id" [delete: cascade]
+Ref "role_has_permissions_role_id_foreign":"roles"."id" < "role_has_permissions"."role_id" [delete: cascade]
+Ref "personal_user_id_foreign":"users"."id" - "personal"."user_id" [delete: restrict]
+Ref "permisos_usuario_user_id_foreign":"users"."id" < "permisos_usuario"."user_id" [delete: cascade]
+Ref "permisos_usuario_permission_id_foreign":"permissions"."id" < "permisos_usuario"."permission_id" [delete: cascade]

@@ -1,0 +1,273 @@
+// Modelo generado del esquema declarado en las migraciones de Laravel.
+// No contiene registros, credenciales ni cambios sobre MySQL.
+// Las relaciones polimorficas de Spatie no se convierten en FK inexistentes.
+
+Project carpinteria_el_tajibo {
+  database_type: 'MySQL'
+}
+
+Table "pedidos" {
+  "id" bigint [pk, not null, increment]
+  "cotizacion_id" bigint [not null]
+  "cliente_id" bigint [not null]
+  "datos_cliente_acordados" json [not null]
+  "fecha_aceptacion" date [not null]
+  "fecha_prevista_entrega" date
+  "responsable_id" bigint
+  "registrado_por_id" bigint [not null]
+  "estado" varchar(30) [not null, default: "aceptado"]
+  "version" int [not null, default: "1"]
+  "cotizacion_aceptada_version" int [not null, default: "0"]
+  "observaciones" text
+  "precio_total_acordado" decimal(18,2) [not null]
+  "clave_registro" char(36) [not null]
+  "hash_solicitud" varchar(64) [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+  "materiales_validados_por_id" bigint
+  "materiales_validados_at" timestamp
+  "precio_confirmado_por_id" bigint
+  "precio_confirmado_at" timestamp
+
+  Indexes {
+    "cotizacion_id" [unique, name: 'pedidos_cotizacion_id_unique']
+    "fecha_prevista_entrega" [name: 'pedidos_fecha_prevista_entrega_index']
+    "estado" [name: 'pedidos_estado_index']
+    "clave_registro" [unique, name: 'pedidos_clave_registro_unique']
+  }
+}
+
+Table "detalles_pedido" {
+  "id" bigint [pk, not null, increment]
+  "pedido_id" bigint [not null]
+  "detalle_cotizacion_id" bigint [not null]
+  "posicion" int [not null]
+  "cantidad_muebles" int [not null]
+  "precio_acordado" decimal(18,2) [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("pedido_id", "posicion") [unique, name: 'detalles_pedido_pedido_id_posicion_unique']
+    "detalle_cotizacion_id" [unique, name: 'detalles_pedido_detalle_cotizacion_id_unique']
+  }
+}
+
+Table "materiales_pedido" {
+  "id" bigint [pk, not null, increment]
+  "detalle_pedido_id" bigint [not null]
+  "material_cotizacion_id" bigint
+  "material_id" bigint [not null]
+  "unidad_id" bigint [not null]
+  "material_nombre" varchar(255) [not null]
+  "unidad_nombre" varchar(60) [not null]
+  "componente" varchar(100) [not null, default: "General"]
+  "cantidad_inicial" decimal(18,4)
+  "cantidad_planificada" decimal(18,4) [not null]
+  "observaciones" text
+  "actualizado_por_id" bigint [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+  "cantidad_utilizada" decimal(18,4)
+  "observaciones_uso" text
+  "uso_registrado_por_id" bigint
+  "uso_registrado_at" timestamp
+
+  Indexes {
+    "material_cotizacion_id" [unique, name: 'materiales_pedido_material_cotizacion_id_unique']
+  }
+}
+
+Table "estados_pedido" {
+  "id" bigint [pk, not null, increment]
+  "pedido_id" bigint [not null]
+  "estado_anterior" varchar(30)
+  "estado_nuevo" varchar(30) [not null]
+  "usuario_id" bigint [not null]
+  "ocurrido_at" timestamp [not null]
+  "motivo" text
+  "version_resultante" int [not null]
+  "clave_operacion" char(36) [not null]
+  "hash_solicitud" varchar(64) [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("pedido_id", "version_resultante") [unique, name: 'estados_pedido_pedido_id_version_resultante_unique']
+    "clave_operacion" [unique, name: 'estados_pedido_clave_operacion_unique']
+  }
+}
+
+Table "cotizaciones" {
+  "id" bigint [pk, not null, increment]
+  "clave_registro" char(36) [not null]
+  "solicitud_hash" char(64) [not null]
+  "cliente_id" bigint
+  "responsable_id" bigint [not null]
+  "fecha" date [not null]
+  "estado" varchar(20) [not null, default: "borrador"]
+  "version" int [not null, default: "1"]
+  "observaciones" text
+  "condiciones" text
+  "costo_materiales" decimal(18,2)
+  "costo_mano_obra" decimal(18,2) [not null, default: "0"]
+  "otros_costos" decimal(18,2) [not null, default: "0"]
+  "costo_total" decimal(18,2)
+  "recargo_porcentaje" decimal(9,4)
+  "precio_sugerido" decimal(18,2)
+  "precio_final" decimal(18,2)
+  "validado_por_id" bigint
+  "validado_at" timestamp
+  "aprobado_por_id" bigint
+  "aprobado_at" timestamp
+  "datos_cliente_aprobados" json
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("estado", "fecha") [name: 'cotizaciones_estado_fecha_index']
+    ("cliente_id", "fecha") [name: 'cotizaciones_cliente_id_fecha_index']
+    "clave_registro" [unique, name: 'cotizaciones_clave_registro_unique']
+  }
+}
+
+Table "detalles_cotizacion" {
+  "id" bigint [pk, not null, increment]
+  "cotizacion_id" bigint [not null]
+  "posicion" int [not null]
+  "tipo_mueble_id" bigint [not null]
+  "material_principal_id" bigint [not null]
+  "tipo_nombre" varchar(80) [not null]
+  "material_principal_nombre" varchar(255) [not null]
+  "largo_cm" decimal(14,4) [not null]
+  "ancho_cm" decimal(14,4) [not null]
+  "alto_cm" decimal(14,4) [not null]
+  "puertas" int [not null, default: "0"]
+  "cajones" int [not null, default: "0"]
+  "divisiones" int [not null, default: "0"]
+  "acabado" varchar(150) [not null]
+  "cantidad_muebles" int [not null]
+  "observaciones" text
+  "mano_obra_unitaria" decimal(18,2) [not null]
+  "mano_obra_total_nominal" decimal(18,2) [not null]
+  "mano_obra_total_aplicada" decimal(18,2) [not null]
+  "motivo_ajuste_mano_obra" text
+  "ajustado_por_id" bigint
+  "ajustado_at" timestamp
+  "otros_costos_total" decimal(18,2) [not null, default: "0"]
+  "costo_materiales_total" decimal(18,2)
+  "costo_total" decimal(18,2)
+  "precio_propuesto" decimal(18,2)
+  "precio_sugerido" decimal(18,2)
+  "precio_final" decimal(18,2)
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("cotizacion_id", "posicion") [unique, name: 'detalles_cotizacion_cotizacion_id_posicion_unique']
+  }
+}
+
+Table "clientes" {
+  "id" bigint [pk, not null, increment]
+  "nombre" varchar(255) [not null]
+  "tipo" varchar(15) [not null]
+  "telefono" varchar(40) [not null]
+  "email" varchar(255)
+  "direccion" varchar(500)
+  "observaciones" text
+  "activo" tinyint(1) [not null, default: "1"]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("activo", "nombre") [name: 'clientes_activo_nombre_index']
+  }
+}
+
+Table "materiales" {
+  "id" bigint [pk, not null, increment]
+  "nombre" varchar(255) [not null]
+  "descripcion" text
+  "categoria" varchar(100) [not null]
+  "especificaciones" text
+  "unidad_id" bigint [not null]
+  "precio_referencia" decimal(18,6) [not null]
+  "stock_minimo" decimal(18,4)
+  "activo" tinyint(1) [not null, default: "1"]
+  "created_at" timestamp
+  "updated_at" timestamp
+  "categoria_id" bigint
+
+  Indexes {
+    ("activo", "categoria") [name: 'materiales_activo_categoria_index']
+  }
+}
+
+Table "unidades_materiales" {
+  "id" bigint [pk, not null, increment]
+  "codigo" varchar(20) [not null]
+  "nombre" varchar(60) [not null]
+  "fraccionaria" tinyint(1) [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    "codigo" [unique, name: 'unidades_materiales_codigo_unique']
+  }
+}
+
+Table "users" {
+  "id" bigint [pk, not null, increment]
+  "name" varchar(255) [not null]
+  "email" varchar(255) [not null]
+  "password_temporal" tinyint(1) [not null, default: "0"]
+  "email_verified_at" timestamp
+  "password" varchar(255) [not null]
+  "activo" tinyint(1) [not null, default: "1"]
+  "remember_token" varchar(100)
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    "email" [unique, name: 'users_email_unique']
+  }
+}
+
+Table "tipos_mueble" {
+  "id" bigint [pk, not null, increment]
+  "codigo" varchar(30) [not null]
+  "nombre" varchar(80) [not null]
+  "activo" tinyint(1) [not null, default: "1"]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    "codigo" [unique, name: 'tipos_mueble_codigo_unique']
+  }
+}
+
+Ref "materiales_unidad_id_foreign":"unidades_materiales"."id" < "materiales"."unidad_id" [delete: restrict]
+Ref "cotizaciones_cliente_id_foreign":"clientes"."id" < "cotizaciones"."cliente_id" [delete: restrict]
+Ref "cotizaciones_responsable_id_foreign":"users"."id" < "cotizaciones"."responsable_id" [delete: restrict]
+Ref "cotizaciones_validado_por_id_foreign":"users"."id" < "cotizaciones"."validado_por_id" [delete: restrict]
+Ref "cotizaciones_aprobado_por_id_foreign":"users"."id" < "cotizaciones"."aprobado_por_id" [delete: restrict]
+Ref "detalles_cotizacion_cotizacion_id_foreign":"cotizaciones"."id" < "detalles_cotizacion"."cotizacion_id" [delete: restrict]
+Ref "detalles_cotizacion_tipo_mueble_id_foreign":"tipos_mueble"."id" < "detalles_cotizacion"."tipo_mueble_id" [delete: restrict]
+Ref "detalles_cotizacion_material_principal_id_foreign":"materiales"."id" < "detalles_cotizacion"."material_principal_id" [delete: restrict]
+Ref "detalles_cotizacion_ajustado_por_id_foreign":"users"."id" < "detalles_cotizacion"."ajustado_por_id" [delete: restrict]
+Ref "pedidos_cotizacion_id_foreign":"cotizaciones"."id" - "pedidos"."cotizacion_id" [delete: restrict]
+Ref "pedidos_cliente_id_foreign":"clientes"."id" < "pedidos"."cliente_id" [delete: restrict]
+Ref "pedidos_responsable_id_foreign":"users"."id" < "pedidos"."responsable_id" [delete: restrict]
+Ref "pedidos_registrado_por_id_foreign":"users"."id" < "pedidos"."registrado_por_id" [delete: restrict]
+Ref "detalles_pedido_pedido_id_foreign":"pedidos"."id" < "detalles_pedido"."pedido_id" [delete: restrict]
+Ref "detalles_pedido_detalle_cotizacion_id_foreign":"detalles_cotizacion"."id" - "detalles_pedido"."detalle_cotizacion_id" [delete: restrict]
+Ref "materiales_pedido_detalle_pedido_id_foreign":"detalles_pedido"."id" < "materiales_pedido"."detalle_pedido_id" [delete: restrict]
+Ref "materiales_pedido_material_id_foreign":"materiales"."id" < "materiales_pedido"."material_id" [delete: restrict]
+Ref "materiales_pedido_unidad_id_foreign":"unidades_materiales"."id" < "materiales_pedido"."unidad_id" [delete: restrict]
+Ref "materiales_pedido_actualizado_por_id_foreign":"users"."id" < "materiales_pedido"."actualizado_por_id" [delete: restrict]
+Ref "estados_pedido_pedido_id_foreign":"pedidos"."id" < "estados_pedido"."pedido_id" [delete: restrict]
+Ref "estados_pedido_usuario_id_foreign":"users"."id" < "estados_pedido"."usuario_id" [delete: restrict]
+Ref "materiales_pedido_uso_registrado_por_id_foreign":"users"."id" < "materiales_pedido"."uso_registrado_por_id" [delete: restrict]
+Ref "pedidos_materiales_validados_por_id_foreign":"users"."id" < "pedidos"."materiales_validados_por_id" [delete: restrict]
+Ref "pedidos_precio_confirmado_por_id_foreign":"users"."id" < "pedidos"."precio_confirmado_por_id" [delete: restrict]

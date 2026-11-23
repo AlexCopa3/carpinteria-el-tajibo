@@ -1,0 +1,11 @@
+MODELO DE BASE DE DATOS — CARPINTERÍA EL TAJIBO
+
+Abrir modelo-completo.dbml en VS Code y pulsar el icono Show diagram del editor. La extensión instalada es DBML Entity-Relationship Diagrams visualizer (bocovo).
+
+Los nueve archivos por iteración son vistas parciales del mismo esquema, no nueve bases diferentes. Incluyen tablas relacionadas necesarias para entender cada proceso; solo dibujan las claves foráneas cuyos extremos están visibles.
+
+El modelo completo contiene 30 tablas y 55 claves foráneas declaradas en las 27 migraciones. La tabla técnica migrations, creada por Laravel, no forma parte de estas definiciones. No se afirma aquí que las migraciones estén aplicadas en una base específica.
+
+Se conservan campos, nulabilidad, claves e índices. Los campos model_id/model_type de Spatie y sesiones.user_id no se unen mediante FK inventadas. Los controles CHECK y otras reglas de negocio se consultan en las migraciones; estos archivos se destinan a visualizar la estructura.
+
+No se modifican el sistema ni los datos. Las figuras del documento utilizan vistas parciales con los campos relevantes de cada iteración para conservar su tamaño y legibilidad. El modelo completo mantiene todos los campos.

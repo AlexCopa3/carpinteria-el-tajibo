@@ -1,0 +1,139 @@
+// Modelo generado del esquema declarado en las migraciones de Laravel.
+// No contiene registros, credenciales ni cambios sobre MySQL.
+// Las relaciones polimorficas de Spatie no se convierten en FK inexistentes.
+
+Project carpinteria_el_tajibo {
+  database_type: 'MySQL'
+}
+
+Table "pagos" {
+  "id" bigint [pk, not null, increment]
+  "pedido_id" bigint [not null]
+  "fecha" date [not null]
+  "importe" decimal(18,2) [not null]
+  "medio" varchar(20) [not null]
+  "referencia" varchar(100)
+  "observaciones" text
+  "registrado_por_id" bigint [not null]
+  "version" int [not null, default: "1"]
+  "clave_registro" char(36) [not null]
+  "hash_solicitud" char(64) [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("pedido_id", "fecha") [name: 'pagos_pedido_id_fecha_index']
+    "clave_registro" [unique, name: 'pagos_clave_registro_unique']
+  }
+}
+
+Table "pedidos" {
+  "id" bigint [pk, not null, increment]
+  "cotizacion_id" bigint [not null]
+  "cliente_id" bigint [not null]
+  "datos_cliente_acordados" json [not null]
+  "fecha_aceptacion" date [not null]
+  "fecha_prevista_entrega" date
+  "responsable_id" bigint
+  "registrado_por_id" bigint [not null]
+  "estado" varchar(30) [not null, default: "aceptado"]
+  "version" int [not null, default: "1"]
+  "cotizacion_aceptada_version" int [not null, default: "0"]
+  "observaciones" text
+  "precio_total_acordado" decimal(18,2) [not null]
+  "clave_registro" char(36) [not null]
+  "hash_solicitud" varchar(64) [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+  "materiales_validados_por_id" bigint
+  "materiales_validados_at" timestamp
+  "precio_confirmado_por_id" bigint
+  "precio_confirmado_at" timestamp
+
+  Indexes {
+    "cotizacion_id" [unique, name: 'pedidos_cotizacion_id_unique']
+    "fecha_prevista_entrega" [name: 'pedidos_fecha_prevista_entrega_index']
+    "estado" [name: 'pedidos_estado_index']
+    "clave_registro" [unique, name: 'pedidos_clave_registro_unique']
+  }
+}
+
+Table "cotizaciones" {
+  "id" bigint [pk, not null, increment]
+  "clave_registro" char(36) [not null]
+  "solicitud_hash" char(64) [not null]
+  "cliente_id" bigint
+  "responsable_id" bigint [not null]
+  "fecha" date [not null]
+  "estado" varchar(20) [not null, default: "borrador"]
+  "version" int [not null, default: "1"]
+  "observaciones" text
+  "condiciones" text
+  "costo_materiales" decimal(18,2)
+  "costo_mano_obra" decimal(18,2) [not null, default: "0"]
+  "otros_costos" decimal(18,2) [not null, default: "0"]
+  "costo_total" decimal(18,2)
+  "recargo_porcentaje" decimal(9,4)
+  "precio_sugerido" decimal(18,2)
+  "precio_final" decimal(18,2)
+  "validado_por_id" bigint
+  "validado_at" timestamp
+  "aprobado_por_id" bigint
+  "aprobado_at" timestamp
+  "datos_cliente_aprobados" json
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("estado", "fecha") [name: 'cotizaciones_estado_fecha_index']
+    ("cliente_id", "fecha") [name: 'cotizaciones_cliente_id_fecha_index']
+    "clave_registro" [unique, name: 'cotizaciones_clave_registro_unique']
+  }
+}
+
+Table "clientes" {
+  "id" bigint [pk, not null, increment]
+  "nombre" varchar(255) [not null]
+  "tipo" varchar(15) [not null]
+  "telefono" varchar(40) [not null]
+  "email" varchar(255)
+  "direccion" varchar(500)
+  "observaciones" text
+  "activo" tinyint(1) [not null, default: "1"]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("activo", "nombre") [name: 'clientes_activo_nombre_index']
+  }
+}
+
+Table "users" {
+  "id" bigint [pk, not null, increment]
+  "name" varchar(255) [not null]
+  "email" varchar(255) [not null]
+  "password_temporal" tinyint(1) [not null, default: "0"]
+  "email_verified_at" timestamp
+  "password" varchar(255) [not null]
+  "activo" tinyint(1) [not null, default: "1"]
+  "remember_token" varchar(100)
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    "email" [unique, name: 'users_email_unique']
+  }
+}
+
+Ref "cotizaciones_cliente_id_foreign":"clientes"."id" < "cotizaciones"."cliente_id" [delete: restrict]
+Ref "cotizaciones_responsable_id_foreign":"users"."id" < "cotizaciones"."responsable_id" [delete: restrict]
+Ref "cotizaciones_validado_por_id_foreign":"users"."id" < "cotizaciones"."validado_por_id" [delete: restrict]
+Ref "cotizaciones_aprobado_por_id_foreign":"users"."id" < "cotizaciones"."aprobado_por_id" [delete: restrict]
+Ref "pedidos_cotizacion_id_foreign":"cotizaciones"."id" - "pedidos"."cotizacion_id" [delete: restrict]
+Ref "pedidos_cliente_id_foreign":"clientes"."id" < "pedidos"."cliente_id" [delete: restrict]
+Ref "pedidos_responsable_id_foreign":"users"."id" < "pedidos"."responsable_id" [delete: restrict]
+Ref "pedidos_registrado_por_id_foreign":"users"."id" < "pedidos"."registrado_por_id" [delete: restrict]
+Ref "pedidos_materiales_validados_por_id_foreign":"users"."id" < "pedidos"."materiales_validados_por_id" [delete: restrict]
+Ref "pedidos_precio_confirmado_por_id_foreign":"users"."id" < "pedidos"."precio_confirmado_por_id" [delete: restrict]
+Ref "pagos_pedido_id_foreign":"pedidos"."id" < "pagos"."pedido_id" [delete: restrict]
+Ref "pagos_registrado_por_id_foreign":"users"."id" < "pagos"."registrado_por_id" [delete: restrict]

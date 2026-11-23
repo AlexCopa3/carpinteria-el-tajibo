@@ -1,0 +1,143 @@
+// Modelo generado del esquema declarado en las migraciones de Laravel.
+// No contiene registros, credenciales ni cambios sobre MySQL.
+// Las relaciones polimorficas de Spatie no se convierten en FK inexistentes.
+
+Project carpinteria_el_tajibo {
+  database_type: 'MySQL'
+}
+
+Table "clientes" {
+  "id" bigint [pk, not null, increment]
+  "nombre" varchar(255) [not null]
+  "tipo" varchar(15) [not null]
+  "telefono" varchar(40) [not null]
+  "email" varchar(255)
+  "direccion" varchar(500)
+  "observaciones" text
+  "activo" tinyint(1) [not null, default: "1"]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("activo", "nombre") [name: 'clientes_activo_nombre_index']
+  }
+}
+
+Table "categorias" {
+  "id" bigint [pk, not null, increment]
+  "nombre" varchar(100) [not null]
+  "activo" tinyint(1) [not null, default: "1"]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    "nombre" [unique, name: 'categorias_nombre_unique']
+  }
+}
+
+Table "unidades_materiales" {
+  "id" bigint [pk, not null, increment]
+  "codigo" varchar(20) [not null]
+  "nombre" varchar(60) [not null]
+  "fraccionaria" tinyint(1) [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    "codigo" [unique, name: 'unidades_materiales_codigo_unique']
+  }
+}
+
+Table "materiales" {
+  "id" bigint [pk, not null, increment]
+  "nombre" varchar(255) [not null]
+  "descripcion" text
+  "categoria" varchar(100) [not null]
+  "especificaciones" text
+  "unidad_id" bigint [not null]
+  "precio_referencia" decimal(18,6) [not null]
+  "stock_minimo" decimal(18,4)
+  "activo" tinyint(1) [not null, default: "1"]
+  "created_at" timestamp
+  "updated_at" timestamp
+  "categoria_id" bigint
+
+  Indexes {
+    ("activo", "categoria") [name: 'materiales_activo_categoria_index']
+  }
+}
+
+Table "existencias_materiales" {
+  "id" bigint [pk, not null, increment]
+  "material_id" bigint [not null]
+  "cantidad" decimal(18,4) [not null, default: "0"]
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    "material_id" [unique, name: 'existencias_materiales_material_id_unique']
+  }
+}
+
+Table "movimientos_materiales" {
+  "id" bigint [pk, not null, increment]
+  "clave" char(36) [not null]
+  "solicitud_hash" char(64) [not null]
+  "usuario_id" bigint [not null]
+  "motivo" text [not null]
+  "material_id" bigint [not null]
+  "unidad_id" bigint [not null]
+  "material_nombre" varchar(255) [not null]
+  "unidad_codigo" varchar(20) [not null]
+  "tipo" varchar(25) [not null]
+  "cantidad" decimal(18,4) [not null]
+  "existencia_anterior" decimal(18,4) [not null]
+  "existencia_resultante" decimal(18,4) [not null]
+  "precio_referencia_historico" decimal(18,6) [not null]
+  "estado_costo" varchar(20) [not null]
+  "costo_total" decimal(18,2)
+  "costo_unitario_base" decimal(24,10)
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    ("material_id", "id") [name: 'movimientos_materiales_material_id_id_index']
+    "clave" [unique, name: 'movimientos_materiales_clave_unique']
+  }
+}
+
+Table "cambios_materiales" {
+  "id" bigint [pk, not null, increment]
+  "material_id" bigint [not null]
+  "usuario_id" bigint [not null]
+  "anterior" json [not null]
+  "posterior" json [not null]
+  "created_at" timestamp
+  "updated_at" timestamp
+}
+
+Table "users" {
+  "id" bigint [pk, not null, increment]
+  "name" varchar(255) [not null]
+  "email" varchar(255) [not null]
+  "password_temporal" tinyint(1) [not null, default: "0"]
+  "email_verified_at" timestamp
+  "password" varchar(255) [not null]
+  "activo" tinyint(1) [not null, default: "1"]
+  "remember_token" varchar(100)
+  "created_at" timestamp
+  "updated_at" timestamp
+
+  Indexes {
+    "email" [unique, name: 'users_email_unique']
+  }
+}
+
+Ref "materiales_unidad_id_foreign":"unidades_materiales"."id" < "materiales"."unidad_id" [delete: restrict]
+Ref "materiales_categoria_id_foreign":"categorias"."id" < "materiales"."categoria_id" [delete: restrict]
+Ref "existencias_materiales_material_id_foreign":"materiales"."id" - "existencias_materiales"."material_id" [delete: restrict]
+Ref "movimientos_materiales_usuario_id_foreign":"users"."id" < "movimientos_materiales"."usuario_id" [delete: restrict]
+Ref "movimientos_materiales_material_id_foreign":"materiales"."id" < "movimientos_materiales"."material_id" [delete: restrict]
+Ref "movimientos_materiales_unidad_id_foreign":"unidades_materiales"."id" < "movimientos_materiales"."unidad_id" [delete: restrict]
+Ref "cambios_materiales_material_id_foreign":"materiales"."id" < "cambios_materiales"."material_id" [delete: restrict]
+Ref "cambios_materiales_usuario_id_foreign":"users"."id" < "cambios_materiales"."usuario_id" [delete: restrict]
